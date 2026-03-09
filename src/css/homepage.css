@@ -1,0 +1,31 @@
+.homepage-header{
+    display:flex;
+align-items:center;
+justify-content: space-between;
+background:black;
+color:white;
+padding:20px 30px;
+}
+.right-headerhome{
+    display:flex;
+     align-items:center;
+     
+}
+.middle-headerhome .input{
+flex:1;
+width:600px;
+
+}
+.middle-headerhome{
+    display:flex;
+    align-items:center;
+    
+}
+.right-headerhome h4{
+    margin:0px 10px;
+}
+.main-bodyhome{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items:center;
+}
