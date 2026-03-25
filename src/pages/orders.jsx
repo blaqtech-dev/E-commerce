@@ -12,6 +12,7 @@ export function OrderPage({cartItems}){
 const [orders,setOrders]=useState([])
 const navigate=useNavigate()
 
+ const apiReq='https://e-commerce-backend-aemd.onrender.com'
 
   const handlePayment = () => {
     setLoading(true);
@@ -33,7 +34,7 @@ const navigate=useNavigate()
 useEffect(()=>{
 
     const getOrderData=async()=>{
-const res=await axios.get('http://localhost:3000/api/orders?expand=products')
+const res=await axios.get(`${apiReq}api/orders?expand=products`)
 
 setOrders(res.data)
 

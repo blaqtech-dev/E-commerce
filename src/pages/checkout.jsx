@@ -15,6 +15,8 @@ const navigate=useNavigate()
  const orderRef=useRef(null)
  const [show,setShow]=useState(false)
 
+ const apiReq='https://e-commerce-backend-aemd.onrender.com'
+
    const goToSection = () => {
     paymentRef.current.scrollIntoView({ behavior: "smooth" });
   };
@@ -26,15 +28,16 @@ const navigate=useNavigate()
 
 
 const orderSection=async()=>{
-    await axios.post('http://localhost:3000/api/orders')
+    await axios.post(`${apiReq}/api/orders`)
     await loadCart();
 navigate('/orders')
 }
 
 
+
    useEffect(()=>{
     const getDeliveryData=async()=>{
- const res=await axios.get('http://localhost:3000/api/delivery-options?expand=estimatedDeliveryTime')
+ const res=await axios.get(`${apiReq}/api/delivery-options?expand=estimatedDeliveryTime`)
     
 setDeliveryOption(res.data)
    
@@ -43,7 +46,7 @@ setDeliveryOption(res.data)
   
 
     const getPaymentData=async()=>{
- const res=await axios.get('http://localhost:3000/api/payment-summary')
+ const res=await axios.get(`${apiReq}/api/payment-summary`)
   
 setPayment(res.data)
 
@@ -175,7 +178,7 @@ if (delivery.priceCents > 0){
 }
 
 const updateDeliveryOption=async()=>{
-  await  axios.put(`http://localhost:3000/api/cart-items/${cartItem.productId}`,{
+  await  axios.put(`${apiReq}/api/cart-items/${cartItem.productId}`,{
         deliveryOptionId:delivery.id
     })
 

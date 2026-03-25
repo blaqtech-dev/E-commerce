@@ -13,10 +13,10 @@ import { ForgotPassword } from './pages/resetpassword'
 
 function App(){
 const [cartItems,setCartItems]=useState([])
-
+ const apiReq='https://e-commerce-backend-aemd.onrender.com'
   const loadCart=
   async()=>{
-const res= await axios.get('http://localhost:3000/api/cart-items?expand=product')
+const res= await axios.get(`${apiReq}/api/cart-items?expand=product`)
 setCartItems(res.data)
 
   }

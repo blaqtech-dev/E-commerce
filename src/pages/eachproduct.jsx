@@ -7,10 +7,10 @@ export function EachProduct({product,loadCart}){
 
      const [quantity,setQuantity]=useState(1)
 
-
+const apiReq='https://e-commerce-backend-aemd.onrender.com'
 
      const addToCart=async()=>{
-await axios.post('http://localhost:3000/api/cart-items',{
+await axios.post(`${apiReq}/api/cart-items`,{
 productId:product.id,
 quantity:quantity
 })

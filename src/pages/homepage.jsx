@@ -8,12 +8,12 @@ import { useEffect,useState } from 'react'
  
  export function HomePage({cartItems,loadCart}){
     const [products,setProducts]=useState([])
-
+const apiReq='https://e-commerce-backend-aemd.onrender.com'
     
 
     useEffect(()=>{
         const getHomeData=async()=>{
-const res= await axios.get('http://localhost:3000/api/products')
+const res= await axios.get(`${apiReq}/api/products`)
 
    setProducts(res.data)
 
