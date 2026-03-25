@@ -1,64 +1,49 @@
  import '../css/homepage.css'
+import {JustNavBar} from '../components/navbar'
+import axios from 'axios'
+import { EachProduct } from './eachproduct'
+import { useEffect,useState } from 'react'
+
+
  
- 
- export function HomePage(){
+ export function HomePage({cartItems,loadCart}){
+    const [products,setProducts]=useState([])
+
+    
+
+    useEffect(()=>{
+        const getHomeData=async()=>{
+const res= await axios.get('http://localhost:3000/api/products')
+
+   setProducts(res.data)
+
+        }
+
+getHomeData()
+
+},[])
+
+
 return(
     <>
     
-    <section className='homepage-header'>
-      <div className='left-headerhome'>
-simpleEcommerce
-      </div>
-       <div className='middle-headerhome'>
-
-        <div>
-<input type='text' placeholder='search product'   className='input'/>
-        </div>
-
-        <div>
-            <button> click me</button>
-        </div>
-      </div>  
-
-       <div className='right-headerhome'>
-   
-        <h3>orders</h3>
-         <h4>0</h4>
-         <small>cart</small>
-      
-      </div>
-
-    </section>
+   <JustNavBar cartItems={cartItems} />
 
 
     <section className='main-bodyhome'>
-<div className='individual-product'>
-    <img src='images/cap6.jpeg'/>
-    <div className='smallbody-content'>
-        <h3>best cap in town</h3>
-        <h3>price:20$</h3>
-        <button>add to cart</button>
-    </div>
-</div>
+        <div className='coverall-product'>
+{
+products.map((product)=>{
+     
+  
+return(
+<EachProduct key={product.id}
+ product={product} loadCart={loadCart}/>
+)
+})
 
-<div className='individual-product'>
-    <img src='images/head3.jpeg'/>
-    <div className='smallbody-content'>
-        <h3>best headset in town</h3>
-        <h3>price:30$</h3>
-        <button>add to cart</button>
-    </div>
+}
 </div>
-
-    <div className='individual-product'>
-    <img src='images/tv2.jpeg'/>
-    <div className='smallbody-content'>
-        <h3>best tv in town</h3>
-        <h3>price:40$</h3>
-        <button>add to cart</button>
-    </div>
-</div>
-
     </section>
     </>
 )

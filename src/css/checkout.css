@@ -1,0 +1,388 @@
+
+.checkout-nav{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    background:white;
+    color:black;
+    padding:12px 50px;
+    position:fixed;
+    top:0;
+    z-index:200;
+    left:0;
+    right:0;
+}
+.short-leftfigure{
+    display:flex;
+    align-items:center;
+}
+.cover-innercheckout{
+    display:flex;
+   justify-content:space-between;
+}
+.left-innercheckout{
+        display:flex;
+        margin-right:35px;
+}
+.left-innercheckout img{
+    height:110px;
+    margin-right:10px;
+    width:130px;
+}
+.individual-checkoutarea h2{
+    margin-bottom:30px;
+}
+.review{
+    margin-bottom:50px;
+     text-align:center;
+    text-transform:capitalize;
+    word-spacing:5px;
+}
+.cover-theboth{
+    
+   display:flex;
+   justify-content:space-between;
+    padding:10px 40px;
+}
+
+.option-checkout{
+    display:flex;
+    align-items: center;
+}
+.coverall-payment{
+    width:400px;
+}
+.individual-payment{
+    display:flex;
+    justify-content:space-between;
+   
+    margin-bottom:25px;
+}
+.individual-checkoutarea{
+  background:white;
+  margin-bottom:10px;
+  border-radius:6px;
+  padding:10px 20px;
+  transition:all 0.7s  ease;
+}
+.individual-checkoutarea:hover{
+    box-shadow:4px 0px 5px 4px black;
+}
+.paymentH1{
+    margin-bottom:35px;
+}
+.option-checkout{
+    margin-bottom:15px;
+    cursor:pointer;
+}
+.option-checkout input{
+    margin-right:10px ;
+}
+a{
+    text-decoration:none;
+    color:white;
+}
+.left-homenav {
+    display:flex;
+    align-items:center;
+}
+.left-homenav h3{
+    text-transform:capitalize;
+    font-size: 20px;
+}
+.left-homenav img{
+width:120px;
+height:100px;
+border-radius:10px;
+}
+.middle-headercheckout{
+    display:flex;
+    align-items:center;
+}
+.right-headercheckout h3{
+    color:black;
+}
+.coverall-checkoutheader{
+    display:flex;
+    align-items:center;
+}
+.right-headercheckout h3{
+margin-right:15px;
+text-transform:capitalize;
+font-size:18px;
+transition: all 1s ease;
+}
+.right-headercheckout h3:hover{
+    border-bottom:6px solid rgb(9, 101, 182);
+    border-radius: 5px;
+}
+.middle-headercheckout h3{
+    margin-right:8px;
+}
+.middle-headercheckout{
+    display:flex;
+}
+.checkout-mainbody{
+    margin-top:30px;
+}
+.deliver-check{
+    font-size:19px;
+    text-transform:capitalize
+}
+.left-innercheckout  img{
+    height:160px;
+    width:150px;
+    border-radius: 9px;
+}
+    .left-contentcheckout h1{
+font-size:19px;
+max-width:250px;
+margin-bottom:10px;
+    }
+ .left-contentcheckout  h3{
+    font-size:20px;
+    margin-bottom: 10px;
+ }
+
+.left-contentcheckout h4{
+    font-size:18px;
+    text-transform:capitalize;
+}
+.short-leftfigure{
+    display:flex;
+    align-items:center;
+    text-align:center;
+}
+.short-leftfigure h4{
+    margin-right:6px;
+}
+.short-leftfigure h5{
+    font-size:15px;
+}
+.left-contentcheckout button{
+    padding:10px 15px;
+    background:red;
+    border:none;
+    outline:none;
+    margin-top:15px;
+    text-transform:capitalize;
+    color:white;
+    transition:all 1s ease;
+    cursor:pointer;
+    border-radius:8px
+}
+.left-contentcheckout button:hover{
+      background:rgb(59, 11, 11);
+}
+.choose-option{
+    font-size:18px;
+    text-transform:capitalize;
+    margin-bottom:8px;
+}
+.inner-optionship h3{
+font-size:17px;
+margin-bottom:6px;
+}
+.inner-optionship h4{
+    font-size:15px;
+}
+.paymentH1{
+    text-transform:capitalize;
+}
+.coverall-payment{
+    background:white;
+    padding:15px 20px;
+    border-radius: 7px;
+  
+
+}
+.individual-payment h3{
+    text-transform:capitalize;
+    font-size:18px;
+}
+.shipping-area{
+    border-bottom:1px solid black;
+    margin-top:15px;
+}
+.btn-checkpayment{
+    text-align:center;
+    margin-top:14px;
+}
+.btn-checkpayment button{
+    padding:10px 25px;
+    font-size:15px;
+    text-transform:capitalize;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    transition:all 1s ease;
+background:rgb(9, 101, 182);
+    border-radius:9px;
+    color:white;
+}
+.btn-checkpayment button:hover{
+background:rgb(12, 35, 56);
+}
+.price-checkoutarea{
+    margin-left:20px;
+}
+.ordermove{
+  margin-bottom:30px;
+  margin-left:30px;
+  padding:7px 13px;
+  border:none;
+outline:none;
+background:rgb(9, 101, 182);
+
+cursor:pointer;
+
+color:white;
+transition:all 1 ease;
+}
+.ordermove:hover{
+   box-shadow:3px 3px 4px 5px rgb(9, 101, 182); 
+}
+.paymentMove{
+    margin-top:30px;
+    margin-left:30px;
+     padding:7px 13px;
+  border:none;
+outline:none;
+background:rgb(9, 101, 182);
+
+cursor:pointer;
+color:white;
+transition:all 1 ease;
+}
+.paymentMove:hover{
+     box-shadow:3px 3px 4px 5px rgb(9, 101, 182); 
+}
+.paymentMove{
+    margin-top:150px;
+}
+@media(max-width:1000px){
+.cover-theboth{
+flex-direction:column;
+}
+}
+@media(max-width:750px){
+    .middle-headercheckout h3{
+font-size:17px;
+    }
+        .middle-headercheckout small{
+font-size:15px;
+        }
+      .middle-headercheckout strong{
+        font-size:15px;
+      }  
+      .right-headercheckout h3{
+         font-size:16px;
+      }
+      .left-homenav img{
+         height:20px;
+            width:30px;
+      }
+      .left-homenav h3{
+         font-size: 16px;
+      }
+      .right-headercheckout h3{
+        font-size:23px;
+        margin-bottom:20px;
+      }
+}
+@media(max-width:590px){
+.checkout-nav{
+     padding:10px 10px; 
+}
+.left-homenav  img{
+    width:10px;
+    height:50px;
+}
+.left-homenav h3{
+    font-size:12px;
+}
+.right-headercheckout{
+font-size:11px;
+}
+.middle-headercheckout h3{
+     margin-right:4px;
+}
+.right-headercheckout h3{
+    margin-right:9px;
+}
+}
+
+@media(max-width:1105px){
+.cover-theboth{
+    flex-direction:column;
+}
+.price-checkoutarea{
+    margin-top:60px;
+    margin-bottom:40px;
+}
+}
+@media(max-width:650px){
+      .left-contentcheckout h1{
+        font-size:18px;
+      }
+       .left-contentcheckout  h3{
+         font-size:16px;
+       }
+       .left-contentcheckout h4{
+          font-size:15px;
+       }
+       .cover-innercheckout{
+        flex-direction:column;
+       }
+       .left-innercheckout{
+        margin-bottom:15px;
+           margin-right:0px;
+       }
+       .left-innercheckout img{
+          height:130px;
+              width:150px;
+       }
+       .cover-theboth{
+         padding:10px 15px;
+       }
+     .review{
+        font-size:20px;
+     }
+     .paymentH1{
+        font-size:20px;
+     }
+.coverall-payment{
+    width:300px;
+}
+}
+
+@media(max-width:500px){
+    .price-checkoutarea{
+        margin-right:20px;
+    }
+.individual-payment h3{
+font-size:16px;
+}
+.deliver-check{
+font-size:18px;
+}
+.left-contentcheckout h1{
+    font-size:16px;
+}
+.left-contentcheckout h3{
+  font-size:15px;
+}
+.short-leftfigure h4{
+ font-size:15px;
+}
+.choose-option{
+    font-size:16px;
+}
+.inner-optionship h3{
+    font-size:16px;
+}
+.inner-optionship h4{
+        font-size:15px;
+        opacity:0.8
+}
+}

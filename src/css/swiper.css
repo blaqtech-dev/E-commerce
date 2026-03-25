@@ -1,0 +1,149 @@
+
+.slider-main{
+    display:flex;
+    margin-bottom:50px;
+    margin-top:120px;
+    padding:50px 120px;
+justify-content:center;
+}
+.slider-main img{
+    height:400px;
+    width: 600px;
+
+ text-align:center;
+    border-radius:10px;
+}
+.slider-content{
+    margin-left:60px;
+}
+.signout{
+    margin-right:14px;
+    padding:7px 10px ;
+    border:none;
+    background:rgb(9, 101, 182);
+    color:white;
+    transition:all 0.5 ease;
+    cursor:pointer;
+}
+.signout:hover{
+      background:rgb(13, 56, 94);
+}
+.slider-content h1,small{
+    font-size:50px;
+    text-transform: capitalize;
+    margin-bottom:40px;
+}
+.slider-content small{
+    color:rgb(9, 101, 182);
+}
+.slider-content h2{
+    text-transform: capitalize;
+    font-size:30px;
+    font-weight: 500;
+ margin-bottom:20px;
+}
+.slider-content p{
+font-size:20px;
+color:rgb(83, 78, 78);
+ margin-bottom:40px;
+ letter-spacing: 1px;
+ line-height:27px;
+ word-spacing: 0.5px;
+}
+.slider-content button{
+    padding:15px 30px;
+    background:rgb(9, 101, 182);
+    font-size:17px;
+    color:white;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    transition:all 1s ease;
+    border-radius:10px;
+}
+.slider-content button:hover{
+    background:rgb(9, 41, 70);
+}
+
+@media(max-width:1350px){
+.slider-main{
+   padding:50px 70px;  
+}
+.slider-main img{
+   height:350px;
+    width:550px;  
+}
+.slider-content{
+    margin-left:45px;
+}
+.slider-content h1,small{
+      font-size:45px;
+}
+.slider-content h2{
+     font-size:25px;
+}
+.slider-content p{
+   font-size:18px; 
+}
+}
+@media(max-width:1000px){
+.slider-main{
+    flex-direction:column;
+}
+.slider-main img{
+       height:400px;
+    width:650px;
+      margin-bottom:40px;
+}
+.slider-content{
+    margin-left:0px;
+  
+}
+
+}
+@media(max-width:720px){
+    .slider-main{
+         padding:50px 50px; 
+    }
+    .slider-main img{
+         height:300px;
+    width: 450px;
+
+    }
+    .slider-content h1,small{
+           font-size:37px;
+    }
+    .slider-content h2{
+          font-size:27px;
+    }
+    .slider-content p{
+        font-size:15px;
+    }
+    .slider-content button{
+         padding:10px 15px;
+         font-size:15px;
+    }
+}
+@media(max-width:720px){
+    .slider-main{
+   padding:50px 25px;
+    }
+  
+ .slider-main img{
+    height:250px;
+    width: 300px;
+ }   
+ .slider-content h1,small{
+      font-size:25px;
+ }
+ .slider-content h2{
+     font-size:21px;
+}
+.slider-content p{
+    font-size:14px;
+}
+.slider-content button{
+      padding:7px 13px;
+}
+}
+

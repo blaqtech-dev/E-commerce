@@ -1,0 +1,132 @@
+.category-btn {
+    text-align:center;
+    margin-top:70px;
+}
+.category-btn h2{
+    text-transform:uppercase;
+    word-spacing:1px;
+    letter-spacing:1px;
+    font-size:24px;
+margin-bottom:26px;
+}
+.category-btn button{
+outline:none;
+margin-right:15px;
+border:none;
+background:rgb(9, 101, 182);
+color:white;
+padding:10px 17px;
+cursor:pointer;
+transition:all 1s ease;
+}
+
+
+.active{
+    border-bottom:6px solid rgb(9, 101, 182);
+    border-radius:4px;
+}
+.category-btn button:hover{
+    color:white;
+   
+    background: rgb(9, 42, 71);
+
+}
+
+.category-products{
+    display:grid;
+    margin-top:60px;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items:center;
+    justify-items:center;
+    row-gap:50px;
+    column-gap:40px;
+    padding:10px 30px;
+}
+.each-product img{
+    height:320px;
+    width:350px;
+    border-radius:10px;
+margin-bottom:20px;
+
+}
+.each-product h3{
+    font-size:24px;
+    margin-bottom:10px;
+}
+.each-product h4{
+        font-size:22px;
+}
+.category-belowbtn{
+    margin-top:40px;
+    text-align:center;
+
+}
+.category-belowbtn button{
+    padding:15px 30px;
+    background:rgb(9, 101, 182);
+    border-radius:9px;
+    border:none;
+    font-size:17px;
+    outline:none;
+    text-transform:capitalize;
+    color:white;
+    cursor:pointer;
+    transition:all 1s ease;
+}
+.category-belowbtn button:hover{
+        background:rgb(12, 35, 56);
+    
+}
+
+
+@media(max-width:1230px){
+    .category-products{
+           grid-template-columns: 1fr 1fr;
+    }
+    .each-product img{
+    height:340px;
+    width:420px;
+
+    }
+
+}
+
+@media(max-width:1000px){
+.each-product img{
+     height:280px;
+    width:320px;
+}
+.each-product h3{
+    font-size:20px;
+}
+.each-product h4{
+        font-size:18px;
+}
+}
+@media(max-width:800px){
+    .category-btn h2{
+         font-size:20px;
+    }
+}
+@media(max-width:750px){
+.category-products{
+      grid-template-columns: 1fr;
+}
+.each-product img{
+     height:350px;
+    width:450px;
+}
+.category-btn h2{
+     font-size:17px;
+}
+.category-btn button{
+    padding:8px 14px;
+    margin-top:10px;
+}
+}
+@media(max-width:550px){
+.each-product img{
+    height:280px;
+    width:340px;
+}
+}
